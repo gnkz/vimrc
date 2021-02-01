@@ -12,7 +12,6 @@ Plug 'idanarye/vim-merginal'
 Plug 'mhinz/vim-signify'
 Plug 'preservim/nerdtree'
 Plug 'mbbill/undotree'
-Plug 'easymotion/vim-easymotion'
 call plug#end()
 
 set termguicolors
