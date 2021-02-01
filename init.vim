@@ -10,7 +10,6 @@ Plug 'ayu-theme/ayu-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'idanarye/vim-merginal'
 Plug 'mhinz/vim-signify'
-Plug 'preservim/nerdtree'
 Plug 'mbbill/undotree'
 call plug#end()
 
@@ -57,6 +56,7 @@ nnoremap <silent> <leader>k :wincmd k<CR>
 nnoremap <silent> <leader>l :wincmd l<CR>
 nnoremap <C-N> :bnext<CR>
 nnoremap <C-P> :bprev<CR>
+tnoremap <Esc> <C-\><C-n>
 
 nnoremap <silent> <leader>p :Files<CR>
 nnoremap <silent> <leader>P :Buffers<CR>
@@ -64,7 +64,6 @@ nnoremap <silent> <leader>f :Rg<CR>
 nnoremap <silent> <leader>gs :G<CR>
 nnoremap <silent> <leader>gd :Gdiff<CR>
 nnoremap <silent> <leader>gb :Gblame<CR>
-nnoremap <silent> <leader>b :NERDTreeToggle<CR>
 nnoremap <silent> <leader>u :UndotreeToggle<CR>
 nnoremap <silent> <leader>mg :MerginalToggle<CR>
 
