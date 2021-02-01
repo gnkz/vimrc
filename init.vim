@@ -16,9 +16,7 @@ Plug 'easymotion/vim-easymotion'
 call plug#end()
 
 set termguicolors
-let ayucolor="light"
 let ayucolor="mirage"
-let ayucolor="dark"
 colorscheme ayu
 
 set number relativenumber
@@ -58,6 +56,8 @@ nnoremap <silent> <leader>h :wincmd h<CR>
 nnoremap <silent> <leader>j :wincmd j<CR>
 nnoremap <silent> <leader>k :wincmd k<CR>
 nnoremap <silent> <leader>l :wincmd l<CR>
+nnoremap <C-N> :bnext<CR>
+nnoremap <C-P> :bprev<CR>
 
 nnoremap <silent> <leader>p :Files<CR>
 nnoremap <silent> <leader>f :Rg<CR>
