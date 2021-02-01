@@ -59,6 +59,7 @@ nnoremap <C-N> :bnext<CR>
 nnoremap <C-P> :bprev<CR>
 
 nnoremap <silent> <leader>p :Files<CR>
+nnoremap <silent> <leader>P :Buffers<CR>
 nnoremap <silent> <leader>f :Rg<CR>
 nnoremap <silent> <leader>gs :G<CR>
 nnoremap <silent> <leader>gd :Gdiff<CR>
