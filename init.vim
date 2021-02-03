@@ -8,7 +8,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'tpope/vim-fugitive'
-Plug 'idanarye/vim-merginal'
 Plug 'mhinz/vim-signify'
 Plug 'mbbill/undotree'
 call plug#end()
@@ -65,7 +64,6 @@ nnoremap <silent> <leader>gs :G<CR>
 nnoremap <silent> <leader>gd :Gdiff<CR>
 nnoremap <silent> <leader>gb :Gblame<CR>
 nnoremap <silent> <leader>u :UndotreeToggle<CR>
-nnoremap <silent> <leader>mg :MerginalToggle<CR>
 
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
