@@ -56,11 +56,12 @@ nnoremap <silent> <leader>k :wincmd k<CR>
 nnoremap <silent> <leader>l :wincmd l<CR>
 nnoremap <C-N> :bnext<CR>
 nnoremap <C-P> :bprev<CR>
-tnoremap <Esc> <C-\><C-n>
+nnoremap <silent><leader>nh :noh<CR>
 
-nnoremap <silent> <leader>p :Files<CR>
-nnoremap <silent> <leader>P :Buffers<CR>
-nnoremap <silent> <leader>f :Rg<CR>
+nnoremap <silent> <C-p> :Files<CR>
+nnoremap <silent> <leader>pg :GFiles<CR>
+nnoremap <silent> <leader>pb :Buffers<CR>
+nnoremap <silent> <leader>ps :Rg<CR>
 nnoremap <silent> <leader>gs :G<CR>
 nnoremap <silent> <leader>gd :Gdiff<CR>
 nnoremap <silent> <leader>gb :Gblame<CR>
@@ -71,6 +72,8 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <leader>rn <Plug>(coc-rename)
+xmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
