@@ -58,13 +58,14 @@ nnoremap <C-N> :bnext<CR>
 nnoremap <C-P> :bprev<CR>
 nnoremap <silent><leader>nh :noh<CR>
 
-nnoremap <silent> <C-p> :Files<CR>
+nnoremap <silent> <leader>pp :Files<CR>
 nnoremap <silent> <leader>pg :GFiles<CR>
 nnoremap <silent> <leader>pb :Buffers<CR>
 nnoremap <silent> <leader>ps :Rg<CR>
 nnoremap <silent> <leader>gs :G<CR>
 nnoremap <silent> <leader>gd :Gdiff<CR>
 nnoremap <silent> <leader>gb :Gblame<CR>
+nnoremap <silent> <leader>gw :Gwrite<CR>
 nnoremap <silent> <leader>u :UndotreeToggle<CR>
 
 nmap <silent> gd <Plug>(coc-definition)
