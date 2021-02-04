@@ -23,6 +23,7 @@ colorscheme ayu
 
 filetype plugin indent on
 set number relativenumber
+set hidden
 set linebreak
 set showbreak=+++
 set textwidth=100
