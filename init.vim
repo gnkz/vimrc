@@ -23,7 +23,6 @@ colorscheme ayu
 
 filetype plugin indent on
 set number relativenumber
-set nu rnu
 set linebreak
 set showbreak=+++
 set textwidth=100
