@@ -21,6 +21,7 @@ set termguicolors
 let ayucolor="mirage"
 colorscheme ayu
 
+filetype plugin indent on
 set number relativenumber
 set nu rnu
 set linebreak
