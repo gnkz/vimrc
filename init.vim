@@ -52,6 +52,12 @@ set ruler
 set undolevels=1000
 set backspace=indent,eol,start
 
+autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 expandtab
+autocmd Filetype typescript setlocal ts=4 sw=4 sts=0 expandtab
+autocmd Filetype json setlocal ts=2 sw=2 sts=0 expandtab
+autocmd Filetype html setlocal ts=2 sw=2 expandtab
+autocmd Filetype css setlocal ts=2 sw=2 sts=0 expandtab
+
 nnoremap <SPACE> <Nop>
 let mapleader=" "
 
