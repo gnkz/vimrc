@@ -77,6 +77,7 @@ nnoremap <silent> <leader>gs :G<CR>
 nnoremap <silent> <leader>gd :Gdiff<CR>
 nnoremap <silent> <leader>gb :Gblame<CR>
 nnoremap <silent> <leader>gw :Gwrite<CR>
+nnoremap <silent> <leader>co :GBranches<CR>
 nnoremap <silent> <leader>u :UndotreeToggle<CR>
 
 nmap <silent> gd <Plug>(coc-definition)
