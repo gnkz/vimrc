@@ -13,6 +13,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 Plug 'mbbill/undotree'
 Plug 'stsewd/fzf-checkout.vim'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'othree/yajs.vim'
 call plug#end()
 
 set termguicolors
