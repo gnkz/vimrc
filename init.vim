@@ -35,6 +35,7 @@ set nobackup
 set undodir=~/.vim/undodir
 set undofile
 set cursorline
+set scrolloff=12
 
 set hlsearch
 set smartcase
