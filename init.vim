@@ -76,7 +76,8 @@ nnoremap <silent> <leader>ps :Rg<CR>
 nnoremap <silent> <leader>gs :G<CR>
 nnoremap <silent> <leader>gd :Gdiff<CR>
 nnoremap <silent> <leader>gb :Gblame<CR>
-nnoremap <silent> <leader>gw :Gwrite<CR>
+nnoremap <silent> <leader>gP :G push<CR>
+nnoremap <silent> <leader>gp :G pull<CR>
 nnoremap <silent> <leader>co :GBranches<CR>
 nnoremap <silent> <leader>u :UndotreeToggle<CR>
 
