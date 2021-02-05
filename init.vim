@@ -4,7 +4,6 @@ Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-commentary'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'HerringtonDarkholme/yats.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -13,8 +12,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 Plug 'mbbill/undotree'
 Plug 'stsewd/fzf-checkout.vim'
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'othree/yajs.vim'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 set termguicolors
