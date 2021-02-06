@@ -66,9 +66,12 @@ nnoremap <silent> <leader>h :wincmd h<CR>
 nnoremap <silent> <leader>j :wincmd j<CR>
 nnoremap <silent> <leader>k :wincmd k<CR>
 nnoremap <silent> <leader>l :wincmd l<CR>
-nnoremap <C-N> :bnext<CR>
-nnoremap <C-P> :bprev<CR>
-nnoremap <silent><leader>nh :noh<CR>
+nnoremap <silent> <C-K> :bnext<CR>
+nnoremap <silent> <C-J> :bprev<CR>
+nnoremap <silent> <leader>bd :bdelete<CR>
+nnoremap <silent> <leader>vr :source ~/.config/nvim/init.vim<CR>
+nnoremap <silent> <leader>ve :e ~/.config/nvim/init.vim<CR>
+nnoremap <silent> <leader>nh :noh<CR>
 
 " Telescope mappings
 nnoremap <silent> <leader>pp <cmd>Telescope find_files theme=get_dropdown<CR>
