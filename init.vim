@@ -63,15 +63,22 @@ autocmd Filetype css setlocal ts=2 sw=2 sts=0 expandtab
 nnoremap <SPACE> <Nop>
 let mapleader=" "
 
+" Navigation
 nnoremap <silent> <leader>h :wincmd h<CR>
 nnoremap <silent> <leader>j :wincmd j<CR>
 nnoremap <silent> <leader>k :wincmd k<CR>
 nnoremap <silent> <leader>l :wincmd l<CR>
+
+" Buffers
 nnoremap <silent> <C-K> :bnext<CR>
 nnoremap <silent> <C-J> :bprev<CR>
 nnoremap <silent> <leader>bd :bdelete<CR>
-nnoremap <silent> <leader>vr :source ~/.config/nvim/init.vim<CR>
+
+" Vim source
+nnoremap <silent> <leader>so :source ~/.config/nvim/init.vim<CR>
 nnoremap <silent> <leader>ve :e ~/.config/nvim/init.vim<CR>
+
+" Stuff
 nnoremap <silent> <leader>nh :noh<CR>
 
 " Yank
