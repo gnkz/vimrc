@@ -74,6 +74,12 @@ nnoremap <silent> <leader>vr :source ~/.config/nvim/init.vim<CR>
 nnoremap <silent> <leader>ve :e ~/.config/nvim/init.vim<CR>
 nnoremap <silent> <leader>nh :noh<CR>
 
+" Yank
+nnoremap <silent> <leader>y "+y
+vnoremap <silent> <leader>y "+y
+nnoremap <silent> <leader>Y gg"+yG
+vnoremap <silent> <leader>Y gg"+yG
+
 " Telescope mappings
 nnoremap <silent> <leader>pp <cmd>Telescope find_files theme=get_dropdown<CR>
 nnoremap <silent> <leader>ps <cmd>Telescope live_grep theme=get_dropdown<CR>
