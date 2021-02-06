@@ -14,6 +14,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'unblevable/quick-scope'
 call plug#end()
 
 set termguicolors
