@@ -5,14 +5,15 @@ Plug 'tpope/vim-commentary'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 Plug 'mbbill/undotree'
 Plug 'stsewd/fzf-checkout.vim'
 Plug 'sheerun/vim-polyglot'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 call plug#end()
 
 set termguicolors
@@ -69,18 +70,24 @@ nnoremap <C-N> :bnext<CR>
 nnoremap <C-P> :bprev<CR>
 nnoremap <silent><leader>nh :noh<CR>
 
-nnoremap <silent> <leader>pp :Files<CR>
-nnoremap <silent> <leader>pg :GFiles<CR>
-nnoremap <silent> <leader>pb :Buffers<CR>
-nnoremap <silent> <leader>ps :Rg<CR>
+" Telescope mappings
+nnoremap <silent> <leader>pp <cmd>Telescope find_files theme=get_dropdown<CR>
+nnoremap <silent> <leader>ps <cmd>Telescope live_grep theme=get_dropdown<CR>
+nnoremap <silent> <leader>pb <cmd>Telescope buffers theme=get_dropdown<CR>
+nnoremap <silent> <leader>pg <cmd>Telescope git_files theme=get_dropdown<CR>
+nnoremap <silent> <leader>co <cmd>Telescope git_branches theme=get_dropdown<CR>
+
+" Fugitive mappings
 nnoremap <silent> <leader>gs :G<CR>
 nnoremap <silent> <leader>gd :Gdiff<CR>
 nnoremap <silent> <leader>gb :Gblame<CR>
 nnoremap <silent> <leader>gP :G push<CR>
 nnoremap <silent> <leader>gp :G pull<CR>
-nnoremap <silent> <leader>co :GBranches<CR>
+
+" Undotree mappings
 nnoremap <silent> <leader>u :UndotreeToggle<CR>
 
+" CoC mappings
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
