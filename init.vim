@@ -2,7 +2,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-commentary'
-Plug 'vim-airline/vim-airline'
+Plug 'doums/barow'
+Plug 'doums/barowGit'
+Plug 'doums/barowLSP'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ayu-theme/ayu-vim'
@@ -131,3 +133,49 @@ inoremap <silent><expr> <c-space> coc#refresh()
 " format on enter, <cr> could be remapped by other vim plugin
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+" Barow
+let g:barow = {
+      \  'modes': {
+      \    'normal': [' ', 'BarowNormal'],
+      \    'insert': ['i', 'BarowInsert'],
+      \    'replace': ['r', 'BarowReplace'],
+      \    'visual': ['v', 'BarowVisual'],
+      \    'v-line': ['l', 'BarowVisual'],
+      \    'v-block': ['b', 'BarowVisual'],
+      \    'select': ['s', 'BarowVisual'],
+      \    'command': ['c', 'BarowCommand'],
+      \    'shell-ex': ['!', 'BarowCommand'],
+      \    'terminal': ['t', 'BarowTerminal'],
+      \    'prompt': ['p', 'BarowNormal'],
+      \    'inactive': [' ', 'BarowModeNC']
+      \  },
+      \  'statusline': ['Barow', 'BarowNC'],
+      \  'tabline': ['BarowTab', 'BarowTabSel', 'BarowTabFill'],
+      \  'buf_name': {
+      \    'empty': '',
+      \    'hi': ['BarowBufName', 'BarowBufNameNC']
+      \  },
+      \  'read_only': {
+      \    'value': 'ro',
+      \    'hi': ['BarowRO', 'BarowRONC']
+      \  },
+      \  'buf_changed': {
+      \    'value': '*',
+      \    'hi': ['BarowChange', 'BarowChangeNC']
+      \  },
+      \  'tab_changed': {
+      \    'value': '*',
+      \    'hi': ['BarowTChange', 'BarowTChangeNC']
+      \  },
+      \  'line_percent': {
+      \    'hi': ['BarowLPercent', 'BarowLPercentNC']
+      \  },
+      \  'row_col': {
+      \    'hi': ['BarowRowCol', 'BarowRowColNC']
+      \  },
+		  \  'modules': [
+      \    [ 'barowGit#branch', 'BarowHint' ],
+      \    [ 'barowLSP#coc_status', 'StatusLine' ]
+      \  ]
+      \}
