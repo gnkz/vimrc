@@ -115,6 +115,8 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <leader>rn <Plug>(coc-rename)
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
+nnoremap <silent><nowait> <leader>o :<C-u>CocList outline<cr>
+nnoremap <silent><nowait> <leader>d :<C-u>CocList diagnostics<cr>
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
