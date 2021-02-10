@@ -17,6 +17,7 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'unblevable/quick-scope'
+Plug 'caenrique/nvim-toggle-terminal'
 call plug#end()
 
 set termguicolors
@@ -117,6 +118,10 @@ xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 nnoremap <silent><nowait> <leader>o :<C-u>CocList outline<cr>
 nnoremap <silent><nowait> <leader>d :<C-u>CocList diagnostics<cr>
+
+" Toggle terminal
+nnoremap <silent> <C-Z> :ToggleTerminal<Enter>
+tnoremap <silent> <C-Z> <C-\><C-n>:ToggleTerminal<Enter>
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
