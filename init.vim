@@ -31,7 +31,7 @@ set showbreak=+++
 set textwidth=100
 set showmatch
 set visualbell
-set updatetime=100
+set updatetime=50
 set noswapfile
 set nobackup
 set undodir=~/.vim/undodir
