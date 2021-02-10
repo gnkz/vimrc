@@ -22,6 +22,7 @@ call plug#end()
 set termguicolors
 let ayucolor="mirage"
 colorscheme ayu
+highlight Comment cterm=italic gui=italic
 
 filetype plugin indent on
 set number relativenumber
