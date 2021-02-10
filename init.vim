@@ -92,11 +92,11 @@ nnoremap <silent> <leader>Y gg"+yG
 vnoremap <silent> <leader>Y gg"+yG
 
 " Telescope mappings
-nnoremap <silent> <leader>pp <cmd>Telescope find_files theme=get_dropdown<CR>
-nnoremap <silent> <leader>ps <cmd>Telescope live_grep theme=get_dropdown<CR>
-nnoremap <silent> <leader>pb <cmd>Telescope buffers theme=get_dropdown<CR>
-nnoremap <silent> <leader>pg <cmd>Telescope git_files theme=get_dropdown<CR>
-nnoremap <silent> <leader>co <cmd>Telescope git_branches theme=get_dropdown<CR>
+nnoremap <silent> <leader>pp <cmd>Telescope find_files theme=get_dropdown prompt_prefix=🔍 find_command=rg,--hidden,--files,--glob,!.git,--glob,!node_modules<CR>
+nnoremap <silent> <leader>ps <cmd>Telescope live_grep theme=get_dropdown prompt_prefix=🔍<CR>
+nnoremap <silent> <leader>pb <cmd>Telescope buffers theme=get_dropdown prompt_prefix=🔍<CR>
+nnoremap <silent> <leader>pg <cmd>Telescope git_files theme=get_dropdown prompt_prefix=🔍<CR>
+nnoremap <silent> <leader>co <cmd>Telescope git_branches theme=get_dropdown prompt_prefix=🔍<CR>
 
 " Fugitive mappings
 nnoremap <silent> <leader>gs :G<CR>
