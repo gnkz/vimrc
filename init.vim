@@ -18,6 +18,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'unblevable/quick-scope'
 Plug 'caenrique/nvim-toggle-terminal'
+Plug 'mattn/emmet-vim'
 call plug#end()
 
 set termguicolors
