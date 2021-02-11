@@ -5,7 +5,6 @@ Plug 'tpope/vim-commentary'
 Plug 'doums/barow'
 Plug 'doums/barowGit'
 Plug 'doums/barowLSP'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ayu-theme/ayu-vim'
 Plug 'tpope/vim-fugitive'
