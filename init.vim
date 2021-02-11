@@ -190,5 +190,5 @@ let g:barow = {
       \}
 
 " Quick scope
-highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=155 cterm=underline
+highlight QuickScopePrimary guifg='#ff5fa4' gui=underline ctermfg=155 cterm=underline
 highlight QuickScopeSecondary guifg='#ff5f5f' gui=underline ctermfg=81 cterm=underline
