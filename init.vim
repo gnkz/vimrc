@@ -97,6 +97,7 @@ nnoremap <silent> <leader>ps <cmd>Telescope live_grep theme=get_dropdown prompt_
 nnoremap <silent> <leader>pb <cmd>Telescope buffers theme=get_dropdown prompt_prefix=🔍 ignore_current_buffer=true<CR>
 nnoremap <silent> <leader>pg <cmd>Telescope git_files theme=get_dropdown prompt_prefix=🔍<CR>
 nnoremap <silent> <leader>co <cmd>Telescope git_branches theme=get_dropdown prompt_prefix=🔍<CR>
+nnoremap <silent> <leader>// <cmd>Telescope current_buffer_fuzzy_find theme=get_dropdown prompt_prefix=🔍<CR>
 
 " Fugitive mappings
 nnoremap <silent> <leader>gs :G<CR>
@@ -114,8 +115,10 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <leader>rn <Plug>(coc-rename)
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
+xmap <leader>f <Plug>(coc-format-selected)
+nmap <leader>f <Plug>(coc-format-selected)
+vmap <silent><leader>a <Plug>(coc-codeaction-selected)
+nmap <silent><leader>a <Plug>(coc-codeaction-selected)
 nnoremap <silent><nowait> <leader>o :<C-u>CocList outline<cr>
 nnoremap <silent><nowait> <leader>d :<C-u>CocList diagnostics<cr>
 
